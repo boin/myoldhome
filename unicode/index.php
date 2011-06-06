@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
 <meta name="HandheldFriendly" content="true">
 <meta name="viewport" content="width=device-width, height=device-height, target-densityDpi=240dpi">
-<title>Text Escaping and Unescaping in JavaScript</title>
-<meta http-equiv="content-script-type" content="text/javascript">
-<link href="static/land.css" rel="stylesheet" type="text/css" media="only all and (max-width: 480px)">
-<link href="static/site.css" rel="stylesheet" type="text/css" media="only all and (min-width: 481px)">
+<title>Text Escaping and Unescaping in JavaScript | 黄欢 - BoinJJ</title>
+<link href="https://github.com/boin/boin.github.com/raw/master/unicode/static/land.css" rel="stylesheet" type="text/css" media="only all and (max-width: 480px)">
+<link href="https://github.com/boin/boin.github.com/raw/master/unicode/static/site.css" rel="stylesheet" type="text/css" media="only all and (min-width: 481px)">
+<!--[if lt IE 9]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 </head>
 <body>
-<div id="header">
-  <div id="lang-selector">
-    <ul>
+<header id="header">
+  <nav>
+    <ul id="lang-selector">
       <!-- <li>fr</li>
       <li>de</li>
       <li>jp</li>-->
       <li><a href="#lang:en" class="en" title="English">en</a></li>
       <li><a href="#lang:zh" class="zh" title="中文">zh</a></li>
     </ul>
-  </div>
+  </nav>
   <h1 id="page-title" class="t:site-title">Text Escaping and Unescaping in JavaScript</h1>
-</div>
-<div class="main"> 
-  <p class="t:site-desc">A collection of utilities for text escaping and unescaping in JavaScript. Try typing "abc" in the first form to see how it works.  Any form can be edited.</p>
-  <div class="formcontainer">
+</header>
+<article class="main">
+  <header>
+    <figure class="t:site-desc"> A collection of utilities for text escaping and unescaping in JavaScript. Try typing "abc" in the first form to see how it works.  Any form can be edited. </figure>
+  </header>
+  <section class="formcontainer">
     <div class="formcol">
       <table class="form">
         <tbody>
@@ -195,56 +199,64 @@
         </tbody>
       </table>
     </div>
-  </div>
-  <h2 class="t:site-notes">Notes</h2>
-  <ul>
-    <li>No data is sent to the server (i.e. everything is done in JavaScript).</li>
-    <li>Conversion from Unicode to other encodings such as Shift_JIS
-      can be slow first time as it needs to initialize internal conversion
-      tables.</li>
-    <li>Surrogate pairs in UTF-16 are supported.  Try inserting <code>\uD840\uDC0B</code> in the second form. </li>
-    <li>Three-byte characters in EUC-JP are not supported.</li>
-  </ul>
-  <h2 class="t:site-links">Links</h2>
-  <ul>
-    <li><a href="http://macchiato.com/unicode/chart/">JavaScript
-      Unicode Charts</a></li>
-    <li><a href="http://josefsson.org/idn.php">Try GNU Libidn</a></li>
-    <li><a href="http://www.ietf.org/rfc/rfc1468.txt">RFC 1468
-      Japanese Character Encoding for Internet Messages</a></li>
-    <li><a href="http://www.ietf.org/rfc/rfc2396.txt">RFC 2396
-      Uniform Resource Identifiers (URI): Generic Syntax</a></li>
-    <li><a href="http://www.ietf.org/rfc/rfc2047.txt">RFC 2047
-      - MIME (Multipurpose Internet Mail Extensions)
-      Part Three: Message Header Extensions for Non-ASCII Text</a></li>
-    <li><a href="http://www.ietf.org/rfc/rfc3490.txt">RFC 3490
-      - Internationalizing Domain Names in Applications (IDNA)</a></li>
-    <li><a href="http://www.ietf.org/rfc/rfc3491.txt">RFC 3491
-      - Nameprep: A Stringprep Profile for
-      Internationalized Domain Names (IDN)</a></li>
-    <li><a href="http://www.ietf.org/rfc/rfc3492.txt">RFC 3492
-      - Punycode: A Bootstring encoding of Unicode
-      for Internationalized Domain Names in Applications (IDNA)</a></li>
-    <li><a href="http://en.wikipedia.org/wiki/Internationalized_domain_name"> Internationalized domain name - Wikipedia</a></li>
-  </ul>
-  <h2 class="t:site-todo">TODO</h2>
-  <ul>
-    <li>RESTFUL api support</li>
-    <li>More languages (such as fr, jp, de)</li>
-  </ul>
-  <h2 class="t:site-history">HISTORY</h2>
-  <ul>
-    <li>I18n Support (zh, en) 2011/01/19</li>
-    <li>GBK, BIG5 encoding Support 2011/01/17</li>
-  </ul>
-</div>
-<hr>
-<address class="t:site-powered">
-Powered by Boin. based on work of <a href="http://0xcc.net/">Satoru Takabayashi</a>
-</address>
-<script type="text/javascript" src="site.js"></script> 
-<script type="text/javascript" src="punycode.js"></script> 
-<script type="text/javascript" src="strutil.js"></script> 
+  </section>
+  <section>
+    <h1 class="t:site-notes">Notes</h1>
+    <ul>
+      <li>No data is sent to the server (i.e. everything is done in JavaScript).</li>
+      <li>Conversion from Unicode to other encodings such as Shift_JIS
+        can be slow first time as it needs to initialize internal conversion
+        tables.</li>
+      <li>Surrogate pairs in UTF-16 are supported.  Try inserting <code>\uD840\uDC0B</code> in the second form. </li>
+      <li>Three-byte characters in EUC-JP are not supported.</li>
+    </ul>
+    <h1 class="t:site-links">Links</h1>
+    <ul>
+      <li><a href="http://macchiato.com/unicode/chart/">JavaScript
+        Unicode Charts</a></li>
+      <li><a href="http://josefsson.org/idn.php">Try GNU Libidn</a></li>
+      <li><a href="http://www.ietf.org/rfc/rfc1468.txt">RFC 1468
+        Japanese Character Encoding for Internet Messages</a></li>
+      <li><a href="http://www.ietf.org/rfc/rfc2396.txt">RFC 2396
+        Uniform Resource Identifiers (URI): Generic Syntax</a></li>
+      <li><a href="http://www.ietf.org/rfc/rfc2047.txt">RFC 2047
+        - MIME (Multipurpose Internet Mail Extensions)
+        Part Three: Message Header Extensions for Non-ASCII Text</a></li>
+      <li><a href="http://www.ietf.org/rfc/rfc3490.txt">RFC 3490
+        - Internationalizing Domain Names in Applications (IDNA)</a></li>
+      <li><a href="http://www.ietf.org/rfc/rfc3491.txt">RFC 3491
+        - Nameprep: A Stringprep Profile for
+        Internationalized Domain Names (IDN)</a></li>
+      <li><a href="http://www.ietf.org/rfc/rfc3492.txt">RFC 3492
+        - Punycode: A Bootstring encoding of Unicode
+        for Internationalized Domain Names in Applications (IDNA)</a></li>
+      <li><a href="http://en.wikipedia.org/wiki/Internationalized_domain_name"> Internationalized domain name - Wikipedia</a></li>
+    </ul>
+  </section>
+  <section>
+    <h1 class="t:site-todo">TODO</h1>
+    <ul>
+      <li>RESTFUL api support</li>
+      <li>More languages (such as fr, jp, de)</li>
+    </ul>
+    <h1 class="t:site-history">HISTORY</h1>
+    <ul>
+      <li>I18n Support (zh, en) 2011/01/19</li>
+      <li>GBK, BIG5 encoding Support 2011/01/17</li>
+    </ul>
+  </section>
+</article>
+<footer class="main">
+  <address class="t:site-powered">
+  Powered by Boin. based on work of <a href="http://0xcc.net/">Satoru Takabayashi</a>
+  </address>
+</footer>
+<script type="text/javascript">
+script_root_path = 'https://github.com/boin/boin.github.com/raw/master/unicode/';
+</script>
+<script type="text/javascript" src="https://github.com/boin/boin.github.com/raw/master/unicode/site.js"></script> 
+<script type="text/javascript" src="https://github.com/boin/boin.github.com/raw/master/unicode/punycode.js"></script> 
+<script type="text/javascript" src="https://github.com/boin/boin.github.com/raw/master/unicode/strutil.js"></script> 
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-597165-4']);

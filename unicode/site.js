@@ -191,7 +191,7 @@ function loadMap(charset, func) {
 		return func();
 	}
 	waiting(1);
-	var scriptname = "map/" + charset + "_map.js";
+	var scriptname = script_root_path + "map/" + charset + "_map.js";
 	loadJS(scriptname,
 	function() {
 		func();
@@ -228,7 +228,7 @@ function localize(lang) {
 	//console.log(lang);
 	if (lang != window.lang) {
 		if (lang in window.langs) applyLang(lang);
-		else loadJS('lang/' + lang + '.js',
+		else loadJS(script_root_path + 'lang/' + lang + '.js',
 		function() {
 			applyLang(lang)
 		});
@@ -240,7 +240,6 @@ function applyLang(lang) {
 	for (var i in langs) {
 		var clz = "t:" + i,
 		elems;
-		//console.log(clz);
 		if ((elems = document.getElementsByClassName(clz)).length > 0) {
 			elems[0].innerHTML = langs[i];
 		}

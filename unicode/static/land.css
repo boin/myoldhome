@@ -37,7 +37,7 @@ a:active, a:focus, a:hover { text-decoration: underline; }
 li { margin-left:.2em; line-height: 166%; padding-top: .2em; }
 ul { margin:0; padding:0 1em; list-style-type : disc; display:none }
 hr { clear: both; color: white; border-color: #ccc; border-style: solid; border-width: 1px 0 0 0; }
-p.figure { text-indent: 0em; text-align: center; margin-top: 0.25ex; margin-bottom: 0; }
+figure { text-indent: 0em; margin-top: 0.25em auto}
 kbd { border-style: solid; border-width: 1px 2px 2px 1px; border-color: gray; font-family: monospace; font-size: smaller; margin: 1px; }
 img { border-style: none; border-width: 0px; }
 a.navi { font-size: small; border-style: solid; border-width:  1px 2px 2px 1px; padding: 1px 4px 1px 4px; border-color: #66f; font-weight: bold; text-decoration: none; }

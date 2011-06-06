@@ -25,39 +25,20 @@ if (is_dir($dir)) {
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
 <meta name="HandheldFriendly" content="true">
-<title>浏览器搜索快速添加</title>
-<link href="static/land.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 0px) and (max-width: 480px)" >
-<link href="static/site.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 481px)" >
+<title>浏览器搜索快速添加 | 黄欢 - BoinJJ</title>
+<link href="https://github.com/boin/boin.github.com/raw/master/sp/static/land.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 0px) and (max-width: 480px)" >
+<link href="https://github.com/boin/boin.github.com/raw/master/sp/static/site.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 481px)" >
 <!--[if IE]><style type="text/css">#ff{display:none}#ie{display:block}</style><![endif]-->
 <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 7]><style type="text/css">.unsupported { display: block }#ie,#ff{display:none;}</style><![endif]-->
-<script type="text/javascript">
-function install(id){
-	var xmlpath = 'xml/'+id+'.xml';
-	try{
-		window.external.AddSearchProvider(xmlpath);
-	}catch(e){
-		alert('安装可耻地失败了……浏览器不支持么？')
-	}
-}
-window.onload = function(){
-	var bts = document.getElementsByTagName('button');
-	for(var i=0;i<bts.length;i++){
-		var bt=bts[i];
-		bt.onclick = function(){
-			if(this.id)install(this.id);	
-		}
-	}
-}
-</script>
 <?php foreach($providers as $id=>$title){
 echo"  <link title=\"$title[0]\" rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"xml/$id.xml\" />\n";
 }?>
 </head>
 <body>
-<div id="wrapper">
+<article id="wrapper">
   <header>
     <h1>常用搜索引擎快速添加</h1>
   </header>
@@ -97,7 +78,26 @@ echo"  <link title=\"$title[0]\" rel=\"search\" type=\"application/opensearchdes
     copyleft @ 2010 Boin <a href="mailto:me@huangh.com">联系我</a>
     </address>
   </footer>
-</div>
+</article>
+<script type="text/javascript">
+function install(id){
+	var xmlpath = 'xml/'+id+'.xml';
+	try{
+		window.external.AddSearchProvider(xmlpath);
+	}catch(e){
+		alert('安装可耻地失败了……浏览器不支持么？')
+	}
+}
+window.onload = function(){
+	var bts = document.getElementsByTagName('button');
+	for(var i=0;i<bts.length;i++){
+		var bt=bts[i];
+		bt.onclick = function(){
+			if(this.id)install(this.id);	
+		}
+	}
+}
+</script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-597165-4']);
