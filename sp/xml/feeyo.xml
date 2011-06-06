@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+                <ShortName>航班追踪</ShortName>
+                <Description>飞友网提供的航班追踪，输入航班号随时掌握航班动向</Description>
+                <InputEncoding>UTF-8</InputEncoding>
+                <Image height="16" width="16" type="image/x-icon">http://feeyo.com/favicon.ico</Image>
+                <Url type="text/html" template="http://wap.veryzhun.com/flightstatus/searchnum.asp?flightNum={searchTerms}"></Url>
+</OpenSearchDescription>

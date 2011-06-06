@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription  xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<InputEncoding>UTF-8</InputEncoding>
+	<ShortName>射手网字幕搜索(SSL)</ShortName>
+	<Description>射手网字幕库，无论大片小片字幕我都有</Description>
+	<Image height="16" width="16" type="x-icon">http://shooter.cn/favicon.ico</Image>
+	<Url type="text/html" template="https:/www.shooter.cn/sub/?searchword={searchTerms}"></Url>
+</OpenSearchDescription>

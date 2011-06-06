@@ -1,0 +1,9 @@
+@import url("style.css");
+* html body { _behavior: url("static/hover.htc") }
+html body { _height: 100% }
+html #menu li a { _display: inline }
+#wrapper { background:rgb(20,20,20); opacity: 0.4; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40)}
+html #body { width: 200px; _position: relative; z-index: 100; _left:expression(document.body.clientWidth - 940);
+_right:0 }
+#hd, #qxga, #reserved { _display: none }
+.triangle { _border-top-color: white; _border-bottom-color: white; border: dashed; _filter: chroma(color=white); }

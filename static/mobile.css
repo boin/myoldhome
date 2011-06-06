@@ -1,0 +1,5 @@
+html { background-color: #e8e8e8 }
+body { font-family: "Microsoft YaHei", Georgia, "Times New Roman", Times; padding: 1.5em; margin: 20px 9% 20px 9%; line-height: 200%; background-color: white; color: #222; border-style: solid; border-color: #ccc; border-width: 1px }
+body { padding-top:0; margin: 2% }
+#powered { display:none }
+#hd, #qxga, #reserved { display: none }

@@ -1,0 +1,58 @@
+@charset "utf-8";
+body { margin: .3em; padding: .3em; background-color: #FFF; color: #222; }
+html { background-color: #e8e8e8;  /* For Firefox users... (bk) */ }
+p { margin: 0 0.8em 1em 0.8em; }
+.small { font-size: small; }
+p.short-note { /* font-size: small; */ }
+p.foottext { text-indent: 0; font-size: small; }
+sup { font-size: small; }
+small.gray { color: #888; }
+address { font-family: 'Lucida Sans Unicode'; font-size: smaller; text-align: right; }
+p.noindent { text-indent: 0em; }
+p.center { text-indent: 0em; text-align: center; }
+p.right { text-indent: 0em; text-align: right; }
+p.last-modified { text-align: right; color: #666; text-indent: 0em; font-size: smaller; }
+p.lang-navigator { text-align: right; font-size: smaller; }
+strong { color: black; font-weight: bold; }
+strong.new { font-size: smaller; color: #a44; font-style: italic; }
+strong.caption { font-size: smaller; padding: 0.1em; font-weight: bold; border-style: solid; border-width: 0 0 1px 0; }
+strike, del { color: #aaa; }
+blockquote, pre { color: #666; margin-right: 2em; margin-left: 2em; padding: 0.2em 1em; }
+blockquote p { text-indent: 0; margin: 0; padding: 0; }
+pre, code { font-family: 'Lucida Console', 'Courier', 'Courier New', monospace; }
+pre { font-size: smaller; line-height: 150%; white-space: pre; width: 100%; overflow: auto; }
+h1 { font-size: 16pt; padding: 0.4em 0 0 0.4em; }
+h1 a, h1 a:link, h1 a:visited, h1 a:active, h1 a:hover { color: #222; }
+h1, h2, h3, h4, h5, h6 { color: black; }
+h2 { font-size: 12pt; display:none }
+h3 { font-size: 10pt; }
+h1 { font-weight: normal; font-family: Verdana, serif; }
+h2, h3, h4, h5, h6 { font-weight: bold; font-family:Verdana, serif; }
+h1, h2, h3, h4, h5, h6 { line-height: 150%; padding: 0; }
+h1, h2, h3 { border-style: solid; border-color: #ccc; border-width: 0 0 1px 0; clear: both }
+a { text-decoration: none; }
+a:link { color: #44f; }
+a:visited { color: #8848d8; }
+a:active, a:focus, a:hover { text-decoration: underline; }
+li { margin-left:.2em; line-height: 166%; padding-top: .2em; }
+ul { margin:0; padding:0 1em; list-style-type : disc; display:none }
+hr { clear: both; color: white; border-color: #ccc; border-style: solid; border-width: 1px 0 0 0; }
+p.figure { text-indent: 0em; text-align: center; margin-top: 0.25ex; margin-bottom: 0; }
+kbd { border-style: solid; border-width: 1px 2px 2px 1px; border-color: gray; font-family: monospace; font-size: smaller; margin: 1px; }
+img { border-style: none; border-width: 0px; }
+a.navi { font-size: small; border-style: solid; border-width:  1px 2px 2px 1px; padding: 1px 4px 1px 4px; border-color: #66f; font-weight: bold; text-decoration: none; }
+a.navi:hover { background-color: #ddf; }
+a.navi:visited { color: #a5c; }
+table { border-color: #888; font-size: small; border-collapse: collapse; }
+th, tr, td { border-width: 1px; padding: 4px; line-height: 120%; }
+div.main { margin-right: 2%; float: left; clear: both; position: relative }
+textarea { height: 2.5em; font-size: small; width:100% }
+form.encoding { font-size: small; text-indent:.3em }
+table.form { font-size: small; line-height: 100%; padding: 0px; margin-top: 0px; margin-bottom: 0px; width: 100%; }
+table.form th { text-align: left; }
+table.form td { text-align: right; }
+table.form td, td { padding: 0px; margin: 0px; }
+table.form td.thin { line-height: 0px; }
+/*id*/
+span#loading { display:none }
+#lang-selector { display:none }
