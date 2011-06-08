@@ -28,8 +28,8 @@ if (is_dir($dir)) {
 <meta charset="utf-8">
 <meta name="HandheldFriendly" content="true">
 <title>浏览器搜索快速添加 | 黄欢 - BoinJJ</title>
-<link href="https://github.com/boin/boin.github.com/raw/master/sp/static/land.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 0px) and (max-width: 480px)" >
-<link href="https://github.com/boin/boin.github.com/raw/master/sp/static/site.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 481px)" >
+<link href="static/land.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 0px) and (max-width: 480px)" >
+<link href="static/site.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 481px)" >
 <!--[if IE]><style type="text/css">#ff{display:none}#ie{display:block}</style><![endif]-->
 <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 7]><style type="text/css">.unsupported { display: block }#ie,#ff{display:none;}</style><![endif]-->

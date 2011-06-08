@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="HandheldFriendly" content="true">
 <meta name="viewport" content="width=device-width, height=device-height, target-densityDpi=240dpi">
 <title>Text Escaping and Unescaping in JavaScript | 黄欢 - BoinJJ</title>
-<link href="https://github.com/boin/boin.github.com/raw/master/unicode/static/land.css" rel="stylesheet" type="text/css" media="only all and (max-width: 480px)">
-<link href="https://github.com/boin/boin.github.com/raw/master/unicode/static/site.css" rel="stylesheet" type="text/css" media="only all and (min-width: 481px)">
+<link href="static/land.css" rel="stylesheet" type="text/css" media="only all and (max-width: 480px)">
+<link href="static/site.css" rel="stylesheet" type="text/css" media="only all and (min-width: 481px)">
 <!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -252,11 +252,11 @@
   </address>
 </footer>
 <script type="text/javascript">
-script_root_path = 'https://github.com/boin/boin.github.com/raw/master/unicode/';
+script_root_path = '/unicode/';
 </script>
-<script type="text/javascript" src="https://github.com/boin/boin.github.com/raw/master/unicode/site.js"></script> 
-<script type="text/javascript" src="https://github.com/boin/boin.github.com/raw/master/unicode/punycode.js"></script> 
-<script type="text/javascript" src="https://github.com/boin/boin.github.com/raw/master/unicode/strutil.js"></script> 
+<script type="text/javascript" src="site.js"></script> 
+<script type="text/javascript" src="punycode.js"></script> 
+<script type="text/javascript" src="strutil.js"></script> 
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-597165-4']);
