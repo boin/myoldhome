@@ -8,14 +8,12 @@ function displayMessage (evt) {
 	}
 	else {
 			if (evt.data == 'Hello World!') {
-				evt.source.postMessage('Hello', e.origin);
-			} else {
+				evt.source.postMessage('Hello Back!', e.origin);
 				message = "I got " + evt.data + " from " + evt.origin;
 				document.getElementById("data").innerHTML = message;
 			}
 	}	
-
-	
+	console.log('msg received: ' + evt.data);
 }
 
 if (window.addEventListener) {
@@ -25,5 +23,4 @@ if (window.addEventListener) {
 else {
 	window.attachEvent("onmessage", displayMessage);
 }
-
 </script>
