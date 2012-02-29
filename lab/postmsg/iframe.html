@@ -1,3 +1,5 @@
+<h3>I am at http://www.huangh.com</h3>
+
 <p id="data"></p>
 <script>
 
@@ -8,7 +10,7 @@ function displayMessage (evt) {
 	}
 	else {
 			if (evt.data == 'Hello World!') {
-				evt.source.postMessage('Hello Back!', e.origin);
+				evt.source.postMessage('Hello Back!', evt.origin);
 				message = "I got " + evt.data + " from " + evt.origin;
 				document.getElementById("data").innerHTML = message;
 			}

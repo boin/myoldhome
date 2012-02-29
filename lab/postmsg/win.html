@@ -35,7 +35,7 @@ sendBtn.onclick = function(){
 
 //display back
 function displayMessage (evt) {
-	document.getElementById("data").innerHTML = evt.data;
+	document.getElementById("data").innerHTML = evt.data + ' from ' +  evt.origin;
 }
 
 if (window.addEventListener) {
