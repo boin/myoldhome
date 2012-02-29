@@ -7,8 +7,8 @@ function displayMessage (evt) {
 		message = "Sorry, You are not welcome.";
 	}
 	else {
-			if (e.data == 'Hello world!') {
-				e.source.postMessage('Hello', e.origin);
+			if (evt.data == 'Hello World!') {
+				evt.source.postMessage('Hello', e.origin);
 			} else {
 				message = "I got " + evt.data + " from " + evt.origin;
 				document.getElementById("data").innerHTML = message;
