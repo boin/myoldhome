@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>window.postMessage</title>
+</head>
+
+<body>
+
+<h1>window.postMessage测试</h1>
+<!--[if lt IE 8]>Sorry! 仅支持IE8以上IE<![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+
+<div><button id="send">发消息</button></div>
+
+<iframe id="if" src="//www.huangh.com/lab/postmsg/iframe.html" width="300" height="200"></iframe>
+
+<!--<![endif]-->
+
+<script>
+
+window.onload = function(){
+
+var sendBtn = document.getElementById('send'),
+    iWindow = document.getElementById('if').contentWindow;
+
+sendBtn.onclick = function(){
+	iWindow.postMessage("Hello World!", 'http://www.huangh.com');
+	console.log('msg sent.');
+};
+
+};
+</script>
+
+</body>
+</html>

@@ -252,7 +252,7 @@
   </address>
 </footer>
 <script type="text/javascript">
-script_root_path = '/unicode/';
+var script_root_path = '/unicode/';
 </script>
 <script type="text/javascript" src="site.js"></script> 
 <script type="text/javascript" src="punycode.js"></script> 

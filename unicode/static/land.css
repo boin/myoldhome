@@ -53,6 +53,24 @@ table.form th { text-align: left; }
 table.form td { text-align: right; }
 table.form td, td { padding: 0px; margin: 0px; }
 table.form td.thin { line-height: 0px; }
-/*id*/
-span#loading { display:none }
-#lang-selector { display:none }
+
+/*unicode*/
+#unicode span#loading { display:none }
+#unicode #lang-selector { display:none }
+
+/*sp*/
+#sp #wrapper { margin: 0 auto}
+#sp ul, li { list-style-type:none; display:none }
+#sp button { height: 30px; width: 220px; margin-top:20px }
+#sp footer { font-size:12px; color:#666 }
+#sp #ie { display:none }
+#sp #ff {min-height: 100px}
+#sp #searchtip { height:205px; width:202px; position:absolute; top:5px; right:50px; background:url(tip.jpg) #efefef no-repeat center 80%; border: 1px solid #ccc; border-radius: 10px; -moz-border-radius:10px; padding: 8px; }
+#sp address { font-style: normal; }
+#sp .unsupported { text-align: left; display:none;margin:0 auto}
+#sp .unsupported h2 {border: none; display: block}
+
+@media (-webkit-min-device-pixel-ratio:0) {
+#sp #ie, #ff{display:none;}
+#sp .unsupported{display: block}
+}

@@ -1,0 +1,29 @@
+<p id="data"></p>
+<script>
+
+function displayMessage (evt) {
+	var message;
+	if (evt.origin !== "http://huangh.com") {
+		message = "Sorry, You are not welcome.";
+	}
+	else {
+			if (e.data == 'Hello world!') {
+				e.source.postMessage('Hello', e.origin);
+			} else {
+				message = "I got " + evt.data + " from " + evt.origin;
+				document.getElementById("data").innerHTML = message;
+			}
+	}	
+
+	
+}
+
+if (window.addEventListener) {
+	// For standards-compliant web browsers
+	window.addEventListener("message", displayMessage, false);
+}
+else {
+	window.attachEvent("onmessage", displayMessage);
+}
+
+</script>
