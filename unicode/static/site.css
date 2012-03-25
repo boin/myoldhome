@@ -89,6 +89,7 @@ footer.main { clear: both; border-color: #ccc; border-style: solid; border-width
 @media (max-width: 800px) {
 body { margin: 2% }
 div.formcol { float:none; width: 90%; min-width: 300px; padding: 0}
+div.lastcol {margin-top:0}
 }
 @media (min-width: 801px) and (max-width: 1024px) {
 body {margin: 2%}
